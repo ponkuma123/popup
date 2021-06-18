@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" (click)="popup()">&times;</div>
+    <h1>You want to delete</h1>
+    <button class="btn btn-primary">Yes</button>
+    <button class="btn btn-warning">No</button>
+  </div>
+</div>
+
+<button (click)="popup()">Delete</button>
